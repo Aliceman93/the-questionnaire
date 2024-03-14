@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
         }).then((result) => {
             return result.json()
         }).then((data) => {
-            document.getElementById("clear").reset();
+            document.getElementById("clear").form.reset();
             console.log(data);
             alert('Ваш ответ принят')
         }).catch((error) => {
